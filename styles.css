@@ -1,0 +1,59 @@
+#controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#flagButtonContainer,
+#musicButtonContainer {
+    margin-bottom: 10px;
+}
+
+#flagButton,
+#musicButton {
+    background-color: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#flagButton:hover,
+#musicButton:hover {
+    background-color: #f44336;
+}
+
+#flower-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 4s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) translateX(0);
+    }
+    100% {
+        transform: translateY(calc(100vh + 20px)) translateX(0);
+    }
+}

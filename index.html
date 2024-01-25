@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Copy This Code ==> And You Might Get Hacked  :) -->
+    <!-- Created By ==> Anubhav -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Republic Day 2023 - @Anubhav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img1.jpeg">
+    <!-- <link rel="icon" href="https://i.ibb.co/6b55CLt/a-jpg-modified.png" /> -->
+
+</head>
+<body>
+
+<div id="container">
+    <div id="ball"></div>
+    <div id="rope" onclick="toggleFlag()"></div>
+    <div id="flagbody">
+        <div id="ChakraContainer">
+            <div id="Chakra"></div>
+        </div>
+        <div class="flowers" id="flower1"></div>
+        <div class="flowers" id="flower2"></div>
+    </div>
+    <div id="stick">
+        <div id="flagBack"></div>
+    </div>
+    <div id="brick">
+        <div id="b1"></div>
+        <div id="b2"></div>
+        <div id="b3"></div>
+    </div>
+</div>
+
+<div id="acknowledgement">
+    <center>
+        <h1 style="color: #F4C430;">Happy Republic Day 2023</h1>
+        <h1 style="color: azure;">माँ तुझे सलाम</h1>
+        <h1 style="color: rgb(6, 240, 96);">Let's Chant together 'Bharat Mata Ki Jai'</h1>
+        <!-- <h1>Bharat Mata Ki Jai</h1> -->
+        <!-- <h3>Let's Chant together 'Bharat Mata Ki Jai'</h3> -->
+        <!-- <h1>सारे जहां से अच्छा हिंदुस्तान हमारा<br>Our India is great</h1> -->
+    </center>
+</div>
+<div id="flower-container"></div> 
+
+<div>
+    <a href="https://www.linkedin.com/in/anubhav-chaudhary-4bba7918b/" target="_blank" class="linkedin-link">
+        <h3 style="text-align: center;">&copy Anubhav</h3>
+    </a>
+</div>
+
+
+
+<audio id="music" src="https://www.dropbox.com/s/8li837azqylencp/aye%20meri%20zameen%20afsos%20nahi%20lagda%20tere%20liye%20son%20dj%20msr.mp3?raw=1" controls style="display: none;"></audio> 
+
+<div id="controls">
+    <div id="flagButtonContainer">
+        <button id="flagButton" onclick="toggleFlag()">Hoist Flag</button>
+    </div>
+    <div id="musicButtonContainer">
+        <button id="musicButton" onclick="toggleMusic()">Play Music</button>
+    </div>
+</div>
+
+<script src="script.js" async defer></script>
+
+<style>
+    
+
+    .flowers {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .red-flower {
+        background-color: #f44336;
+    }
+
+    .yellow-flower {
+        background-color: #1ba3e2;
+    }
+
+    .green-flower {
+        background-color: #4caf50;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(0) rotate(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(300px) rotate(360deg);
+            opacity: 1;
+        }
+    }
+</style>
+
+<style>
+    /* Copy This Code and You might Get hacked */
+    /* <!-- Created By ==> Anubhav --> */
+    /* ... */
+
+    #controls {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #flagButtonContainer,
+    #musicButtonContainer {
+        margin-bottom: 10px;
+    }
+
+    #flagButton,
+    #musicButton {
+        background-color: #ff5722;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #flagButton:hover,
+    #musicButton:hover {
+        background-color: #f44336;
+    }
+
+    #flower-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .flower {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: fall 4s linear forwards;
+        pointer-events: none;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-20px) translateX(0);
+        }
+        100% {
+            transform: translateY(calc(100vh + 20px)) translateX(0);
+        }
+    }
+</style>
+
+</body>
+</html>
