@@ -6,7 +6,8 @@ const musicButton = document.getElementById("musicButton");
 const flowerContainer = document.getElementById("flower-container");
 let flagOpened = false;
 
-alert("You will find a short and thin rope by the left side of the flag stick and which is hanging from the golden ball at the top. Tap or Pull it to let our flag glorify the day today and forever");
+// alert("You will find a short and thin rope by the left side of the flag stick and which is hanging from the golden ball at the top. Tap or Pull it to let our flag glorify the day today and forever");
+
 //Copy This Code --> You Might Get hacked :)
 // Created By ==> Anubhav
 
